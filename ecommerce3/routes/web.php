@@ -18,9 +18,21 @@ Route::get('/', function () {
     return view('front.index');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
+
+
+Route::get('/admin/login', function () {
+    return view('backend.login');
 });
+
+Route::get('/admin/index', function () {
+    return view('backend.index');
+});
+
+Route::get('/admin/forgot-password', function () {
+    return view('backend.forgot-password');
+});
+
+
 
 Auth::routes();
 
